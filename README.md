@@ -1,4 +1,18 @@
 # Traffic Management
-Traffic Management Simulator in Java and Swing
+Traffic management simulator demosnstrates movement of traffic across a highway.
+
+Following features are covered as part of this version:
+
+1. System selects random number of cars at the start.
+  a. Each car has a arandom speed.
+  b. When a car stops at a signal it starts off witha. random speed again.
+  
+2. All trafic lights are started with a random timer 
+
+3. Traffic can move while signal turns from 
+  ```diff
+- GREEN to YELLOW
+  but is restricted when signal turns from  
++ RED to GREEN
 
 ![](traffic_management.gif)
