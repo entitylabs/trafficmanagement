@@ -9,7 +9,7 @@ Following features are covered as part of this version:
   a. Each car has a arandom speed.
   b. When a car stops at a signal it starts off witha. random speed again.
   
-2. All trafic lights are started with a random timer 
+2. All traffic lights are started with a random timer 
 
 3. Traffic can move while signal turns from GREEN to YELLOW
   but is restricted when signal turns from  RED to GREEN
