@@ -60,8 +60,8 @@ public class TrafficManagementPanel extends JPanel implements ActionListener {
 		for (int i = 0; i < numberOFTrafficLights; i++) {
 			g.setColor(Color.darkGray);
 			trafficLocationLabelStep = trafficLocationLabelStep - 15;
-			g.drawString("[X=" + traficLightXLocation + ",Y=," + traficLightYLocation + "]", traficLightXLocation - 40,
-					90);
+//			g.drawString("[X=" + traficLightXLocation + ",Y=," + traficLightYLocation + "]", traficLightXLocation - 40,
+//					90);
 			int crossingYPosition = 0;
 			for (int j = 0; j < 13; j++) {
 				if (j % 2 == 0) {
@@ -94,9 +94,42 @@ public class TrafficManagementPanel extends JPanel implements ActionListener {
 					car.getWidth() - 5, car.getHeight() - 4, true);
 
 			g.setColor(carColor);
-			g.drawString(car.toString(), car.getPosition().getxCoordinate(), 200 + carLabelDistance);
+			//g.drawString(car.toString(), car.getPosition().getxCoordinate(), 200 + carLabelDistance);
 
 		}
+		
+		
+		
+		// draw train
+
+		g.setColor(new Color(27, 27, 27));
+		g.fill3DRect(0, 50, (int) getToolkit().getScreenSize().getWidth(), 2, true);
+		g.fill3DRect(0, 65, (int) getToolkit().getScreenSize().getWidth(), 2, true);
+
+		int xPositionOfTrack = 0;
+
+		for (int i = 0; i < 200; i++) {
+			g.drawLine(xPositionOfTrack, 48, xPositionOfTrack - 3, 70);
+			g.drawLine(xPositionOfTrack + 1, 48, xPositionOfTrack - 2, 70);
+
+			xPositionOfTrack = xPositionOfTrack + 5;
+
+			if (i % 10 == 0) {
+				g.fill3DRect(xPositionOfTrack, 15, 2, 25, true);
+
+				g.fill3DRect(xPositionOfTrack - 5, 60, 2, 30, true);
+
+				g.drawLine(xPositionOfTrack, 15, xPositionOfTrack - 5, 60);
+
+			}
+
+		}
+
+		// wires
+		g.drawLine(0, 40, (int) getToolkit().getScreenSize().getWidth(), 40);
+
+		g.setColor(new Color(173, 216, 230));
+		g.fillRect(0, 250, (int) getToolkit().getScreenSize().getWidth(), 30);
 
 	}
 
