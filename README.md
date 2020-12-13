@@ -12,7 +12,7 @@ Following features are covered as part of this version:
 2. All traffic lights are started with a random timer 
 
 3. Traffic can move while signal turns from GREEN to YELLOW
-  but is restricted when signal turns from  RED to GREEN
+  but is restricted when signal turns from  RED to YELLOW
 
 
 
