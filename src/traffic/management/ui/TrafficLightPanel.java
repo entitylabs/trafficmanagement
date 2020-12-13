@@ -15,11 +15,11 @@ public class TrafficLightPanel implements Observer {
 	private JPanel redLight;
 	private JPanel yellowLight;
 	private JPanel greenLight;
-	private JPanel trafficLightContainer;
+	private TrafficLightBackgrundPanel trafficLightContainer;
 
 	public TrafficLightPanel() {
 
-		this.trafficLightContainer = new JPanel();
+		this.trafficLightContainer = new TrafficLightBackgrundPanel();
 		this.redLight = new JPanel();
 		this.yellowLight = new JPanel();
 		this.greenLight = new JPanel();
@@ -32,6 +32,7 @@ public class TrafficLightPanel implements Observer {
 
 		setHorizontalLayout(trafficLightContainerLayout);
 		setVerticalLayout(trafficLightContainerLayout);
+		
 
 	}
 
@@ -91,7 +92,7 @@ public class TrafficLightPanel implements Observer {
 		return trafficLightContainer;
 	}
 
-	public void setTrafficLightContainer(JPanel trafficLightContainer) {
+	public void setTrafficLightContainer(TrafficLightBackgrundPanel trafficLightContainer) {
 		this.trafficLightContainer = trafficLightContainer;
 	}
 
