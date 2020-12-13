@@ -1,6 +1,8 @@
 # Traffic Management
 Traffic management simulator demosnstrates movement of traffic across a highway.
 
+![](traffic_management.gif)
+
 Following features are covered as part of this version:
 
 1. System selects random number of cars at the start.
@@ -10,9 +12,12 @@ Following features are covered as part of this version:
 2. All trafic lights are started with a random timer 
 
 3. Traffic can move while signal turns from 
-  ```diff
+
+```diff
 + GREEN to YELLOW
   but is restricted when signal turns from  
 - RED to GREEN
+@@
 
-![](traffic_management.gif)
+
+
