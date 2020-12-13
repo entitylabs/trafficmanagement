@@ -11,8 +11,8 @@ Following features are covered as part of this version:
 
 3. Traffic can move while signal turns from 
   ```diff
-- GREEN to YELLOW
++ GREEN to YELLOW
   but is restricted when signal turns from  
-+ RED to GREEN
+- RED to GREEN
 
 ![](traffic_management.gif)
