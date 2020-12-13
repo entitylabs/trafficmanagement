@@ -11,13 +11,8 @@ Following features are covered as part of this version:
   
 2. All trafic lights are started with a random timer 
 
-3. Traffic can move while signal turns from 
-
-```diff
-+ GREEN to YELLOW
-  but is restricted when signal turns from  
-- RED to GREEN
-@@
+3. Traffic can move while signal turns from GREEN to YELLOW
+  but is restricted when signal turns from  RED to GREEN
 
 
 
