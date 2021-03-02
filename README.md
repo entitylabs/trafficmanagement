@@ -9,7 +9,7 @@ Following features are covered as part of this version:
 
   a. Each car has a arandom speed.
   
-  b. When a car stops at a signal it starts off witha. random speed again.
+  b. When a car stops at a signal it starts off with a random speed again.
   
 2. All traffic lights are started with a random timer 
 
